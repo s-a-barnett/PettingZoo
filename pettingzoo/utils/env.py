@@ -189,7 +189,7 @@ class AECEnv(Generic[AgentID, ObsType, ActionType]):
             self._cumulative_rewards[agent],
             self.terminations[agent],
             self.truncations[agent],
-            self.infos[agent],
+            None,
         )
 
     def _was_dead_step(self, action: ActionType) -> None:
